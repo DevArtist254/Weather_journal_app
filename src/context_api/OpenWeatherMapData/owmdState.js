@@ -22,8 +22,8 @@ const OwmdState = (props) => {
 
     const native = `https://`
     const city = `${text}`
-    const key = `88a402f88eaeec4299cadea2b0c0dce6`
-    const Url = `${native}api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`
+
+    const Url = `${native}api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=`
 
     const res = await axios.get(`${Url}`)
     console.log(res.data)
